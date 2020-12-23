@@ -8,6 +8,14 @@
     = csp_meta_tag
     = stylesheet_pack_tag 'application', media: 'all'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
-  %body
-    %p test
+  %header
+    %nav.navbar.navbar-expand-lg.navbar-light.mb-10
+      .container
+        = link_to "Hyper Kitten", "#", class: "navbar-brand"
+        .collapse.navbar-collapse
+          %ul.navbar-nav.ml-auto
+            %li.nav-item
+              = link_to "Test 1", "#", class: "nav-link"
+            %li.nav-item
+              = link_to "Test 1", "#", class: "nav-link"
     = yield

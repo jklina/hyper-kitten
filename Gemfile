@@ -17,6 +17,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'redis', '~> 4.0'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'tzinfo-data'
+gem 'inline_svg'
 
 group :development, :test do
   gem 'pry-rails'

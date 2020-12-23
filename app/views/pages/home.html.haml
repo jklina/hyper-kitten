@@ -1,1 +1,14 @@
-%h1 Hyper Kitten is alive!
+.section.py-xl#hero
+  .container
+    .row.align-items-center
+      .col-6
+        %h1 Hyper Kitten is alive!
+        %p.lead Helping empower non-profits and people through the use of the web.
+        %ul
+          %li Website Design
+          %li Email
+          %li Online Advertising
+          %li Educational Services
+        = link_to "Contact Us", "#", class: "btn btn-light"
+      .col-6
+        = inline_svg_pack_tag("media/img/illustrations/designer.svg", class: "mr-2")
