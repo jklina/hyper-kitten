@@ -15,7 +15,27 @@
         .collapse.navbar-collapse
           %ul.navbar-nav.ml-auto
             %li.nav-item
-              = link_to "Test 1", "#", class: "nav-link"
+              = link_to "About Us", "#", class: "nav-link"
             %li.nav-item
-              = link_to "Test 1", "#", class: "nav-link"
-    = yield
+              = link_to "Our Projects", "#", class: "nav-link"
+            %li.nav-item
+              = link_to "News", "#", class: "nav-link"
+            %li.nav-item
+              = link_to "Get Involved", "#", class: "nav-link"
+            %li.nav-item
+              = link_to "Donations", "#", class: "nav-link"
+            %li.nav-item
+              = link_to "Contact Us", "#", class: "nav-link"
+  = yield
+  %footer.bg-black.text-light.py-12
+    .container
+      .row.equal
+        .col-4
+          %h3.text-info.font-weight-bold Who We Are
+          %p We're a couple, Josh and Laura Klina, who live in the small town of Kanab, UT and help a number of the local non profits.
+        .col-4
+          %h3.text-info.font-weight-bold Contact Information
+          %p We're a couple, Josh and Laura Klina, who live in the small town of Kanab, UT and help a number of the local non profits 
+        .col-4
+          %h3.text-info.font-weight-bold Donate
+          %p We're a couple, Josh and Laura Klina, who live in the small town of Kanab, UT and help a number of the local non profits 

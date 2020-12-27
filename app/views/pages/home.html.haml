@@ -1,14 +1,61 @@
-.section.py-xl#hero
+.section.text-light.py-14#hero
   .container
     .row.align-items-center
       .col-6
-        %h1 Hyper Kitten is alive!
-        %p.lead Helping empower non-profits and people through the use of the web.
-        %ul
-          %li Website Design
-          %li Email
-          %li Online Advertising
-          %li Educational Services
+        %h1.font-weight-bold Hyper Kitten is alive!
+        %p.lead Hyper Kitten is a nonprofit 501 (c)(3) organization that helps nonprofits and individuals accomplish their mission through the web.
+        %p Making positive change takes organization and communication. These days a large portion of that happens on the web. We're here to help guide you through the impossible number of ways to allocate your resources so that you can maximize your impact through the web. Contact us today for guidance in setting up your non-profit's online presence!
         = link_to "Contact Us", "#", class: "btn btn-light"
       .col-6
-        = inline_svg_pack_tag("media/img/illustrations/designer.svg", class: "mr-2")
+        = inline_svg_pack_tag("media/img/illustrations/click_here.svg", class: "mr-2")
+.section.py-xl
+  .container
+    .row.mb-8
+      .col-12.col-md-10.col-lg-8
+        %h2
+          Let us be your
+          %span.font-weight-bold.text-primary-desat guide.
+        %p.lead Here's how we can help.
+    .row.mb-8
+      .col-6
+        .card.shadow-lift.h-100
+          .card-body
+            = inline_svg_pack_tag("media/img/illustrations/website_setup.svg", class: "mb-8", height: 120, width: 120)
+            %h3 Website Setup
+            %p Learn how to get a website up and running on a tiny budget. There are an infinite number of ways to get your website up and running and we can help you sort through the options depending on whether you need a few basic pages with a contact form or a completely custom platform.
+      .col-6
+        .card.shadow-lift.h-100
+          .card-body
+            = inline_svg_pack_tag("media/img/illustrations/data_hosting.svg", class: "mb-8", height: 120, width: 120)
+            %h3 Email Hosting
+            %p Setting up email hosting using your own domain can be confusing. We can help guide you through the process and recommend options that are either inexpensive or free!
+    .row.mb-8
+      .col-6
+        .card.shadow-lift.h-100
+          .card-body
+            = inline_svg_pack_tag("media/img/illustrations/google_ad.svg", class: "mb-8", height: 120, width: 120)
+            %h3 Online Advertising
+            %p Chances are your non profit qualifies for free advertising! Learn how to utilize grants to help spread the word and get donations.
+      .col-6
+        .card.shadow-lift.h-100
+          .card-body
+            = inline_svg_pack_tag("media/img/illustrations/marketing.svg", class: "mb-8", height: 120, width: 120)
+            %h3 Email Marketing
+            %p Email marketing is typically the most valuable channel an organization has. Its low cost, efficient, and there's nothing standing in between you and your subscribers. Learn how to build your email list and use free tools you may qualify for as a non profit!
+%section.bg-dark.text-light.py-12
+  .container
+    .row.equal
+      .col-6
+        %h2.text-info.font-weight-bold We can help!
+        %p.lead We'd love to hear about your non profit.
+        %p We know how confusing trying to manage the tech side of your non profit can be in addition to your mission! Its a confusing, necessary piece of the puzzle, but we're here to help. Whether you have no idea where to begin, or are looking for an answer to something specific as where to register your domain name, we can point you in the right direction.
+        %p We've been helping small non-profits bootstrap their tech stacks for years and we'd be more than happy to help with yours.
+      .col-6
+        %h2.text-info.font-weight-bold What's up?
+        = simple_form_for ContactSubmission.new, class: "bg-dar" do |f|
+          = f.input :name, input_html: { class: "form-control-sm" }
+          = f.input :email, input_html: { class: "form-control-sm" }
+          = f.input :organization, input_html: { class: "form-control-sm" }
+          = f.input :phone, input_html: { class: "form-control-sm" }
+          = f.input :message, input_html: { class: "form-control-sm" }
+          = f.submit "Submit", class: "btn btn-primary"
