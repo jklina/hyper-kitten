@@ -11,11 +11,11 @@
   %header
     %nav.navbar.navbar-expand-lg.navbar-light.mb-10
       .container
-        = link_to "Hyper Kitten", "#", class: "navbar-brand"
+        = link_to "Hyper Kitten", root_path, class: "navbar-brand"
         .collapse.navbar-collapse
           %ul.navbar-nav.ml-auto
             %li.nav-item
-              = link_to "About Us", "#", class: "nav-link"
+              = link_to "About Us", page_path("about_us"), class: "nav-link"
             %li.nav-item
               = link_to "Our Projects", "#", class: "nav-link"
             %li.nav-item
