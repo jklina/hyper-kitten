@@ -27,15 +27,34 @@
             %li.nav-item
               = link_to "Contact Us", "#", class: "nav-link"
   = yield
-  %footer.bg-black.text-light.py-12
+  %footer.bg-black.text-light.py-8
     .container
       .row.equal
-        .col-4
+        .col-md-4.col-sm-12.mb-sm-2
           %h3.text-info.font-weight-bold Who We Are
-          %p We're a couple, Josh and Laura Klina, who live in the small town of Kanab, UT and help a number of the local non profits.
-        .col-4
+          .d-flex.flex-fill
+            = inline_svg_pack_tag("media/img/icons/duotone-icons/General/Half-heart.svg", class: "flex-shrink-0", height: 48, width: 48)
+            %p.d-block We're a couple, Josh and Laura Klina, who live in the small town of Kanab, UT and help a number of the local non profits with their technical issues.
+        .col-md-4.col-sm-12.mb-sm-2
           %h3.text-info.font-weight-bold Contact Information
-          %p We're a couple, Josh and Laura Klina, who live in the small town of Kanab, UT and help a number of the local non profits 
-        .col-4
+          .d-flex
+            = inline_svg_pack_tag("media/img/icons/duotone-icons/Map/marker2.svg", class: "flex-shrink-0", height: 48, width: 48)
+            .vcard{:id => ""}
+              %span.fn.n
+                %span.given-name
+                %span.additional-name
+                %span.family-name
+              .org Hyper Kitten
+              %a.email{:href => "mailto:hello@hyperkitten.org"} hello@hyperkitten.org
+              .adr
+                .street-address 106 W 100 N
+                %span.locality Kanab
+                ,
+                %span.region UT
+                ,
+                %span.postal-code 84741
+        .col-md-4.col-sm-12.mb-sm-2
           %h3.text-info.font-weight-bold Donate
-          %p We're a couple, Josh and Laura Klina, who live in the small town of Kanab, UT and help a number of the local non profits 
+          .d-flex
+            = inline_svg_pack_tag("media/img/icons/duotone-icons/Shopping/Dollar.svg", class: "flex-shrink-0", height: 48, width: 48)
+            %p Donations help pay for hosting costs, ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem 

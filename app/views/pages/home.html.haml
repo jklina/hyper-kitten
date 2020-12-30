@@ -17,26 +17,26 @@
           %span.font-weight-bold.text-primary-desat guide.
         %p.lead Here's how we can help.
     .row.mb-8
-      .col-6
+      .col-md-6.col-sm-12.mb-sm-4
         .card.shadow-lift.h-100
           .card-body
             = inline_svg_pack_tag("media/img/illustrations/website_setup.svg", class: "mb-8", height: 120, width: 120)
             %h3 Website Setup
             %p Learn how to get a website up and running on a tiny budget. There are an infinite number of ways to get your website up and running and we can help you sort through the options depending on whether you need a few basic pages with a contact form or a completely custom platform.
-      .col-6
+      .col-md-6.col-sm-12.mb-sm-4
         .card.shadow-lift.h-100
           .card-body
             = inline_svg_pack_tag("media/img/illustrations/data_hosting.svg", class: "mb-8", height: 120, width: 120)
             %h3 Email Hosting
             %p Setting up email hosting using your own domain can be confusing. We can help guide you through the process and recommend options that are either inexpensive or free!
     .row.mb-8
-      .col-6
+      .col-md-6.col-sm-12.mb-sm-4
         .card.shadow-lift.h-100
           .card-body
             = inline_svg_pack_tag("media/img/illustrations/google_ad.svg", class: "mb-8", height: 120, width: 120)
             %h3 Online Advertising
             %p Chances are your non profit qualifies for free advertising! Learn how to utilize grants to help spread the word and get donations.
-      .col-6
+      .col-md-6.col-sm-12.mb-sm-4
         .card.shadow-lift.h-100
           .card-body
             = inline_svg_pack_tag("media/img/illustrations/marketing.svg", class: "mb-8", height: 120, width: 120)
@@ -45,12 +45,12 @@
 %section.bg-dark.text-light.py-12
   .container
     .row.equal
-      .col-6
+      .col-md-6.col-sm-12.mb-sm-4
         %h2.text-info.font-weight-bold We can help!
         %p.lead We'd love to hear about your non profit.
         %p We know how confusing trying to manage the tech side of your non profit can be in addition to your mission! Its a confusing, necessary piece of the puzzle, but we're here to help. Whether you have no idea where to begin, or are looking for an answer to something specific as where to register your domain name, we can point you in the right direction.
         %p We've been helping small non-profits bootstrap their tech stacks for years and we'd be more than happy to help with yours.
-      .col-6
+      .col-md-6.col-sm-12.mb-sm-4
         %h2.text-info.font-weight-bold What's up?
         = simple_form_for ContactSubmission.new, class: "bg-dar" do |f|
           = f.input :name, input_html: { class: "form-control-sm" }
