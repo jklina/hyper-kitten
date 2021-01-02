@@ -1,0 +1,28 @@
+%head
+  %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+  %title HyperKitten
+  %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+  = csrf_meta_tags
+  = csp_meta_tag
+  = stylesheet_pack_tag 'application', media: 'all'
+  = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+%header
+  %nav.navbar.navbar-expand-lg.navbar-light.mb-10
+    .container
+      = link_to "Hyper Kitten", root_path, class: "navbar-brand"
+      .collapse.navbar-collapse
+        %ul.navbar-nav.ml-auto
+          %li.nav-item
+            = link_to "About Us", page_path("about_us"), class: "nav-link"
+          %li.nav-item
+            = link_to "Projects", page_path("projects"), class: "nav-link"
+          %li.nav-item
+            = link_to "Playbook", page_path("playbook"), class: "nav-link"
+          %li.nav-item
+            = link_to "News", "#", class: "nav-link"
+          %li.nav-item
+            = link_to "Get Involved", page_path("get_involved"), class: "nav-link"
+          %li.nav-item
+            = link_to "Donations", page_path("donations"), class: "nav-link"
+          %li.nav-item
+            = link_to "Contact Us", "#", class: "nav-link"

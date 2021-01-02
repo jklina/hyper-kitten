@@ -1,0 +1,31 @@
+%footer.bg-black.text-light.py-8
+  .container
+    .row.equal
+      .col-md-4.col-sm-12.mb-sm-2
+        %h3.text-info.font-weight-bold Who We Are
+        .d-flex.flex-fill
+          = inline_svg_pack_tag("media/img/icons/duotone-icons/General/Half-heart.svg", class: "flex-shrink-0", height: 48, width: 48)
+          %p.d-block We're a couple, Josh and Laura Klina, who live in the small town of Kanab, UT and help a number of the local non profits with their technical issues.
+      .col-md-4.col-sm-12.mb-sm-2
+        %h3.text-info.font-weight-bold Contact Information
+        .d-flex
+          = inline_svg_pack_tag("media/img/icons/duotone-icons/Map/marker2.svg", class: "flex-shrink-0", height: 48, width: 48)
+          .vcard{:id => ""}
+            %span.fn.n
+              %span.given-name
+              %span.additional-name
+              %span.family-name
+            .org Hyper Kitten
+            %a.email{:href => "mailto:hello@hyperkitten.org"} hello@hyperkitten.org
+            .adr
+              .street-address 106 W 100 N
+              %span.locality Kanab
+              ,
+              %span.region UT
+              ,
+              %span.postal-code 84741
+      .col-md-4.col-sm-12.mb-sm-2
+        %h3.text-info.font-weight-bold Donate
+        .d-flex
+          = inline_svg_pack_tag("media/img/icons/duotone-icons/Shopping/Dollar.svg", class: "flex-shrink-0", height: 48, width: 48)
+          %p As a nonprofit, we rely on the generous financial support from donors and clients to assist us with our mission.  We created Hyper Kitten knowing that many of those who need technological assistance may be budding nonprofits and those with limited finances themselves.
