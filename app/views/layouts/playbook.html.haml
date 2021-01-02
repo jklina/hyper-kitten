@@ -17,14 +17,11 @@
               .card-body
                 %h6.font-weight-bold.text-uppercase.mb-3 Learn
                 %ul.card-list.list.text-gray-700.mb-6
-                  %li.list-item.active
-                    =link_to "Website", "#", class: "list-link text-reset"
-                  %li.list-item
-                    =link_to "Advertising", "#", class: "list-link text-reset"
-                  %li.list-item
-                    =link_to "Email Hosting", "#", class: "list-link"
-                  %li.list-item
-                    =link_to "Social Media", "#", class: "list-link"
+                  = render PlaybookLinkComponent.new(text: "Home", url: page_path("playbook"))
+                  = render PlaybookLinkComponent.new(text: "Website", url: page_path("playbook/website"))
+                  = render PlaybookLinkComponent.new(text: "Advertising", url: page_path("playbook/advertising"))
+                  = render PlaybookLinkComponent.new(text: "Email Hosting", url: page_path("playbook/email_hosting"))
+                  = render PlaybookLinkComponent.new(text: "Social Media", url: page_path("playbook/social_media"))
         .col-12.col-md-9
           .card.shadow-light-lg
             .card-body

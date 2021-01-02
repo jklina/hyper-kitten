@@ -18,6 +18,7 @@ gem 'redis', '~> 4.0'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'tzinfo-data'
 gem 'inline_svg'
+gem "view_component", require: "view_component/engine"
 
 group :development, :test do
   gem 'pry-rails'
