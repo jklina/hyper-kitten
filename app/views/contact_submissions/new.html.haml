@@ -1,0 +1,10 @@
+%section.mb-8
+  .container
+    %h2.text-info.font-weight-bold What's up?
+    = simple_form_for @contact_submission, class: "bg-dar" do |f|
+      = f.input :name, input_html: { class: "form-control-sm" }
+      = f.input :email, input_html: { class: "form-control-sm" }
+      = f.input :organization, input_html: { class: "form-control-sm" }
+      = f.input :phone, input_html: { class: "form-control-sm" }
+      = f.input :message, input_html: { class: "form-control-sm" }
+      = f.submit "Submit", class: "btn btn-primary"
